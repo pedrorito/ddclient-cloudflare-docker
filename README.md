@@ -14,7 +14,7 @@ I found a few blog and forum posts about how to use ddclient with cloudflare but
 1. Create a cloudflare api token using the `Edit Zone DNS` template.  For `Zone Resources` select `All zones` - https://developers.cloudflare.com/api/tokens/create
 2. Clone this repo
 ```
-git clone https://github.com/alexcreek/ddclient-cloudflare-docker.git
+git clone https://github.com/pedrorito/ddclient-cloudflare-docker.git
 cd ddclient-cloudflare-docker
 ```
 3. Update the following in [ddclient.conf](/ddclient.conf). If needed, here's some config examples from the [source](https://github.com/ddclient/ddclient/blob/develop/ddclient.in#L5489-L5516)
