@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 RUN apt-get update \
-  && apt-get install -y lsb-release git autoconf make iproute2 \
+  && apt-get install -y lsb-release git autoconf make iproute2 curl \
   perl libdata-validate-ip-perl libio-socket-ssl-perl libjson-pp-perl \
   && apt clean
 RUN git clone https://github.com/ddclient/ddclient.git \
@@ -16,5 +16,5 @@ RUN git clone https://github.com/ddclient/ddclient.git \
   && make VERBOSE=1 check \
   && make install \
   && cd \
-  && rm -rf /ddlient
+  && rm -rf /ddclient
 CMD /usr/bin/ddclient -foreground
