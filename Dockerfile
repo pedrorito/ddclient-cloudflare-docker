@@ -5,7 +5,7 @@ RUN apt-get update \
   && apt clean
 RUN git clone https://github.com/ddclient/ddclient.git \
   && cd ddclient \
-  && git checkout master \
+  && git checkout v3.11.2 \
   && sed -i "s/interval('60s')),/interval('300s')),/" ddclient.in \
   && ./autogen \
   && ./configure \
